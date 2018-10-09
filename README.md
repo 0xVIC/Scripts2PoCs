@@ -1,2 +1,3 @@
-# scripts
-Algunos scripts utiles
+# SCRIPTS
+
+Simple scripts for my own tests/pocs
