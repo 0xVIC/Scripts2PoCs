@@ -1,5 +1,4 @@
 #!/bin/bash
-# Wfuzz --list,.jsp,.html,.php  FUZZFUZ2Z
 
 domain=$1
 
